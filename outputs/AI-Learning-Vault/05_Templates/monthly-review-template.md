@@ -1,0 +1,36 @@
+# Monthly Review - YYYY-MM
+
+## 1. Artifact delivered
+
+Co realnie powstało?
+
+## 2. Evidence
+
+Link do repo / commita / README / diagramu / ADR.
+
+## 3. Retrieval test
+
+Co potrafię odtworzyć bez notatek?
+
+## 4. Weak areas
+
+Co rozpoznaję, ale nie umiem zastosować?
+
+## 5. Anki health
+
+- Ile kart zaległych?
+- Które karty są złe?
+- Co zawiesić/usunąć?
+
+## 6. Distractions
+
+Co zabrało czas bez wpływu na projekt?
+
+## 7. Next month focus
+
+Jeden główny rezultat.
+
+## 8. Stop doing
+
+Czego świadomie nie robię?
+
