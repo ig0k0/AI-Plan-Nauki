@@ -1,25 +1,25 @@
 # python-api
 
-## Definition from memory
+## Definicja z pamięci
 
 [Napisz bez patrzenia w źródła]
 
-## Why it matters
+## Dlaczego to ważne
 
 [Jak użyję tego w projekcie?]
 
-## Common failure modes
+## Typowe błędy
 
 -
 -
 
-## Security notes
+## Notatki security
 
 -
 -
 
-## Anki candidates
+## Kandydaci do Anki
 
-- Q:
-  A:
+- P:
+  O:
 

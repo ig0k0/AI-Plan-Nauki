@@ -1,23 +1,23 @@
 # prompt-injection
 
-## Definition from memory
+## Definicja z pamięci
 
 [Napisz bez patrzenia w źródła]
 
-## Examples
+## Przykłady
 
 -
 
-## Controls
+## Kontrole
 
 -
 
-## Tests
+## Testy
 
 -
 
-## Anki candidates
+## Kandydaci do Anki
 
-- Q:
-  A:
+- P:
+  O:
 

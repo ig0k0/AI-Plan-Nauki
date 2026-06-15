@@ -1,19 +1,19 @@
-# Session: [temat] - [data]
+# Sesja: [temat] - [data]
 
-## Goal
+## Cel
 
 Co konkretnie chcę umieć lub zbudować po tej sesji?
 
-## Pre-recall: what do I already know?
+## Pre-recall: co już wiem?
 
 Piszę z pamięci, bez patrzenia w źródła.
 
-## Source used
+## Użyte źródło
 
 - Kurs/dokumentacja:
 - Czas:
 
-## Key ideas from memory
+## Kluczowe idee z pamięci
 
 1.
 2.
@@ -21,7 +21,7 @@ Piszę z pamięci, bez patrzenia w źródła.
 4.
 5.
 
-## Self-explanation
+## Wyjaśnienie własnymi słowami
 
 Dlaczego to działa?
 
@@ -29,20 +29,20 @@ Kiedy to się psuje?
 
 Jak to wykorzystam w moim projekcie?
 
-## Project action
+## Akcja projektowa
 
 Jaki commit, test, diagram, README albo ADR z tego wynika?
 
-## Anki candidates
+## Kandydaci do Anki
 
-- Q:
-  A:
-- Q:
-  A:
-- Q:
-  A:
+- P:
+  O:
+- P:
+  O:
+- P:
+  O:
 
-## Next action
+## Następna akcja
 
 Jedna rzecz na następną sesję.
 

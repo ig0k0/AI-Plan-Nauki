@@ -1,35 +1,34 @@
-# [Project name]
+# [Nazwa projektu]
 
-## Purpose
+## Cel
 
 Po co istnieje ten projekt?
 
-## Current outcome
+## Aktualny wynik
 
 Co ma istnieć na końcu tygodnia?
 
-## Definition of done
+## Definicja ukończenia
 
 - [ ]
 - [ ]
 - [ ]
 
-## Security baseline
+## Minimalne security
 
 - [ ] `.env.example`
 - [ ] Brak sekretów w repo
 - [ ] Walidacja wejścia
 - [ ] Logging bez danych wrażliwych
 - [ ] Abuse cases
-- [ ] Human review, jeśli potrzebny
+- [ ] Weryfikacja człowieka, jeśli potrzebna
 
 ## Log
 
 ### YYYY-MM-DD
 
-- Built:
-- Tested:
-- Learned:
-- Decision:
-- Next:
-
+- Zbudowane:
+- Przetestowane:
+- Nauczone:
+- Decyzja:
+- Następny krok:

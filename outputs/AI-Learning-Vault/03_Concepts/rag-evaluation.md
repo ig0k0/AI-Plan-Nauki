@@ -1,22 +1,22 @@
 # rag-evaluation
 
-## Definition from memory
+## Definicja z pamięci
 
 [Napisz bez patrzenia w źródła]
 
-## Metrics
+## Metryki
 
 - Citation correctness:
 - Retrieval hit rate:
-- Queries without sources:
+- Zapytania bez źródeł:
 - Fallback rate:
 
-## Project use
+## Zastosowanie w projekcie
 
 -
 
-## Anki candidates
+## Kandydaci do Anki
 
-- Q:
-  A:
+- P:
+  O:
 

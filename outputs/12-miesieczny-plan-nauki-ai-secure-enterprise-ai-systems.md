@@ -1,6 +1,7 @@
 # 12-miesięczny plan nauki: Secure Enterprise AI Systems
 
-Okres: **czerwiec 2026 - czerwiec 2027**  
+Start: **16.06.2026**  
+Okres: **16.06.2026 - 15.06.2027**  
 Limit: **maksymalnie 14 h tygodniowo**  
 Główny cel zawodowy: **Secure Enterprise AI Systems / AI Security & Implementation Architecture**  
 Taktyczny cel początkowy: **AUTOCOR jako priorytet nr 1 na start**  
@@ -23,30 +24,17 @@ Zasada główna:
 ### Projekt pomocniczy / capstone
 
 3. **AI Workflow Orchestrator**  
-   Projekt pomocniczy, mniejszy zakres. Ma pokazać workflow, tool calling, human approval, audit log, retry i security by design. Nie musi być pełną produkcyjną integracją Slack/Linear.
+   Projekt pomocniczy, mniejszy zakres. Ma pokazać przepływ pracy, wywoływanie narzędzi, akceptację człowieka, dziennik audytu, retry i security by design. Nie musi być pełną produkcyjną integracją Slack/Linear.
 
 ### Dokument architektoniczny
 
 4. **Local vs Cloud AI Architecture Review**  
-   Dokument/case study, nie pełny projekt techniczny. Ma bazować na ADR-ach zbieranych od miesięcy 4-10.
+   Dokument/studium przypadku, nie pełny projekt techniczny. Ma bazować na ADR-ach zbieranych od miesięcy 4-10.
 
 ### Laboratoria przygotowawcze
 
 - `api-integration-lab` - laboratorium pomocnicze, nie główne repo do promowania.
 - `llm-structured-output-lab` - laboratorium pomocnicze albo moduł w późniejszym projekcie, nie główne repo do promowania.
-
-### Projekty odrzucone jako główne
-
-Nie zapominasz o nich, ale nie promujesz ich jako głównych projektów rocznych:
-
-- pełny publiczny framework pod SecureVisio,
-- duży projekt Cisco/Network Automation jako główne portfolio,
-- pełna produkcyjna integracja Slack/Linear z prawdziwymi kontami, jeśli mocki wystarczą,
-- osobny duży projekt `api-integration-lab`,
-- osobny duży projekt `llm-structured-output-lab`,
-- pełny LLMOps/inference platform project,
-- pełny data engineering / BI project,
-- pełna aplikacja Data Science / Kaggle / ML modeling.
 
 ## 2. Stały rytm tygodnia
 
@@ -66,14 +54,14 @@ DeepLearning.AI wchodzi lekko dopiero wtedy, gdy zaczynasz LLM application basic
 - 2-3 h: kursy pod aktualny etap.
 - 1-2 h: Python i testy.
 - 1 h: AUTOCOR utrzymaniowo, jeśli jeszcze niezdany.
-- 1 h: dokumentacja, ADR-y, case study.
+- 1 h: dokumentacja, ADR-y, studium przypadku.
 - 1 h: angielski techniczny.
 
 ### Miesiące 9-12: portfolio, architektura i rynek
 
 - 5 h: dopracowanie projektów.
-- 3 h: AI Workflow Orchestrator albo Local vs Cloud Review.
-- 2 h: dokumentacja, case studies, GitHub.
+- 3 h: AI Workflow Orchestrator albo Local vs Cloud Architecture Review.
+- 2 h: dokumentacja, studia przypadku, GitHub.
 - 2 h: cloud/context architecture.
 - 1 h: angielski.
 - 1 h: rynek, CV, LinkedIn, rozmowy informacyjne.
@@ -90,8 +78,8 @@ Security nie zaczyna się w miesiącu 7. Od pierwszego miesiąca każdy projekt 
 - logging bez danych wrażliwych,
 - `README` z sekcją `Security notes`,
 - proste abuse cases,
-- informację, kiedy wymagany jest human review,
-- ograniczenia tool calling,
+- informację, kiedy wymagana jest weryfikacja człowieka,
+- ograniczenia wywoływania narzędzi,
 - threat notes nawet w małych labach.
 
 Miesiące 7-8 są dopiero pogłębieniem: automatyzacja testów, OWASP, NIST, prompt injection, data leakage i raportowanie ryzyk.
@@ -202,7 +190,7 @@ Minimalny zakres:
 
 - Masz rytm AUTOCOR.
 - Masz pierwszy notebook Colab.
-- Masz pierwsze małe repo/lab z README i security notes.
+- Masz pierwsze małe repo/lab z README i notatkami security.
 
 ## Miesiąc 2: AUTOCOR + Python/API + AI Fundamentals cd.
 
@@ -214,7 +202,7 @@ Cel: wzmocnić praktyczne podstawy inżynierskie, ale bez robienia z `api-integr
 - REST API: status codes, headers, auth basics.
 - Testy: podstawy `pytest`.
 - Docker: tylko minimum.
-- AI Fundamentals: ChatGPT, workflow, prywatność, etyka, ML/LLM overview.
+- AI Fundamentals: ChatGPT, przepływ pracy, prywatność, etyka, ML/LLM overview.
 
 ### Źródła
 
@@ -256,7 +244,7 @@ Cel: wejść w LLM praktycznie, ale nadal trzymać AUTOCOR jako główny cel poc
 - context window,
 - hallucination,
 - grounding,
-- structured outputs,
+- wyniki strukturalne,
 - JSON/schema validation,
 - fallback,
 - error handling,
@@ -285,7 +273,7 @@ Zakres:
 - testy błędnych przypadków,
 - proste testy prompt injection,
 - fallback,
-- human review flag,
+- flaga weryfikacji człowieka,
 - README z ograniczeniami.
 
 ### Decyzja o Google Colab
@@ -294,7 +282,7 @@ Oceń:
 
 - czy Colab wystarcza do nauki,
 - czy nie przeszkadza w prywatności,
-- czy workflow notebook -> repo jest wygodny,
+- czy przepływ pracy notebook -> repo jest wygodny,
 - czy potrzebny jest lokalny runtime/VPS.
 
 ### Kryterium ukończenia
@@ -411,7 +399,7 @@ Rozbuduj `secure-rag-reference-architecture`:
 
 Projekt ma działający RAG, testy jakości, podstawowe testy security, risk register i runbook.
 
-## Miesiąc 6: Secure RAG v1 + case study
+## Miesiąc 6: Secure RAG v1 + studium przypadku
 
 Cel: domknąć pierwszy główny projekt do wersji pokazowej.
 
@@ -444,7 +432,7 @@ Domknij `secure-rag-reference-architecture`:
 - `docs/runbook.md`,
 - `docs/adr/0005-data-residency-and-sensitive-documents.md`,
 - `docs/adr/0006-monitoring-and-cost-controls.md`,
-- pierwszy case study po angielsku.
+- pierwsze studium przypadku po angielsku.
 
 Minimalne metryki w `docs/monitoring.md`:
 
@@ -453,7 +441,7 @@ Minimalne metryki w `docs/monitoring.md`:
 - citation correctness pass rate,
 - retrieval hit rate na eval set,
 - liczba odmów / fallbacków,
-- liczba przypadków human review,
+- liczba przypadków wymagających weryfikacji człowieka,
 - koszt per zapytanie, jeśli używasz płatnego API.
 
 Nie musisz robić dużego Grafana dashboardu w pierwszym roku. Wystarczy prosty eksport metryk/logów i dokumentacja, jak te metryki byłyby monitorowane produkcyjnie.
@@ -522,7 +510,7 @@ Cel: pogłębić AI security i zrobić z tego niezależny artefakt portfolio.
 - automatyzacja testów,
 - raport HTML/Markdown,
 - mapping OWASP/NIST,
-- human review controls,
+- kontrole weryfikacji człowieka,
 - ograniczenia guardrails,
 - auditability.
 
@@ -543,11 +531,11 @@ Rozbuduj `ai-security-test-harness-for-rag`:
 - `docs/security-controls.md`,
 - `docs/owasp-mapping.md`,
 - przykładowy raport testów,
-- case study po angielsku.
+- studium przypadku po angielsku.
 
 ### Checkpoint rynkowy
 
-- Opublikuj drugie case study.
+- Opublikuj drugie studium przypadku.
 - Zaktualizuj GitHub pinned repos.
 
 ### Kryterium ukończenia
@@ -560,12 +548,12 @@ Cel: pokazać automatyzację procesu biznesowego, ale bez budowania zbyt dużego
 
 ### Zakres minimalny
 
-- mock Slack API,
-- mock Linear API,
+- testowe API Slacka,
+- testowe API Lineara,
 - deduplikacja,
-- structured output,
-- human approval,
-- audit log,
+- wynik strukturalny,
+- akceptacja człowieka,
+- dziennik audytu,
 - retry,
 - testy integracyjne,
 - `docs/security-by-design.md`.
@@ -590,15 +578,15 @@ Repo pomocnicze: `ai-workflow-orchestrator`.
 
 Security od razu:
 
-- ograniczone tool permissions,
-- human review przed utworzeniem ticketu,
-- audit log,
+- ograniczone uprawnienia narzędzi,
+- weryfikacja człowieka przed utworzeniem zgłoszenia,
+- dziennik audytu,
 - brak danych wrażliwych w logach,
 - abuse cases.
 
 ### Kryterium ukończenia
 
-Projekt jest ukończony, gdy można uruchomić jeden scenariusz end-to-end z testowymi wiadomościami: system pobiera wiadomość z mock Slack API, deduplikuje ją, generuje ticket jako structured output, zatrzymuje go na human approval, po akceptacji zapisuje go przez mock Linear API, zapisuje audit log i pokazuje testy integracyjne dla tego przepływu.
+Projekt jest ukończony, gdy można uruchomić jeden scenariusz end-to-end z testowymi wiadomościami: system pobiera wiadomość z testowego API Slacka, deduplikuje ją, generuje zgłoszenie jako wynik strukturalny, zatrzymuje go na akceptacji człowieka, po akceptacji zapisuje go przez testowe API Lineara, zapisuje dziennik audytu i pokazuje testy integracyjne dla tego przepływu.
 
 ## Miesiąc 10: Local vs Cloud AI Architecture Review
 
@@ -643,7 +631,7 @@ Decyzja ma wynikać z tego, który cloud realnie wystąpił w projektach lub pra
 
 ### Kryterium ukończenia
 
-Masz dokument/case study, który wygląda jak próbka pracy AI Solutions Architect.
+Masz dokument/studium przypadku, który wygląda jak próbka pracy AI Solutions Architect.
 
 ## Miesiąc 11: SQL / enterprise data jako dodatek do RAG
 
@@ -690,7 +678,7 @@ Cel: zamienić projekty w czytelny sygnał rynkowy.
 
 - GitHub,
 - README,
-- case studies,
+- studia przypadku,
 - CV po angielsku,
 - LinkedIn po angielsku,
 - opis profilu zawodowego,
@@ -754,7 +742,7 @@ Jeśli praca/studia ograniczą czas, minimalny sukces to:
 3. `ai-security-test-harness-for-rag` v1.
 4. `local-vs-cloud-ai-architecture-review`.
 5. Jeden mniejszy `ai-workflow-orchestrator` albo dobrze opisany prototyp.
-6. 2 case studies po angielsku.
+6. 2 studia przypadku po angielsku.
 
 To nadal jest mocniejszy sygnał niż dużo kursów bez artefaktów.
 

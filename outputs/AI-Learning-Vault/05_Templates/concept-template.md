@@ -1,31 +1,31 @@
-# [Concept name]
+# [Nazwa pojęcia]
 
-## Definition from memory
+## Definicja z pamięci
 
 [Bez patrzenia w źródła]
 
-## Why it matters
+## Dlaczego to ważne
 
 -
 
-## When it breaks
+## Kiedy to się psuje
 
 -
 
-## Similar concepts
+## Podobne pojęcia
 
 -
 
-## Project use
+## Zastosowanie w projekcie
 
 -
 
-## Security/trade-off notes
+## Notatki security / trade-off
 
 -
 
-## Anki candidates
+## Kandydaci do Anki
 
-- Q:
-  A:
+- P:
+  O:
 

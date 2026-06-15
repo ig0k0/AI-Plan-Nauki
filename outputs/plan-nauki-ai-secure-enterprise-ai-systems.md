@@ -58,7 +58,7 @@ To oznacza osobę, która potrafi:
 
 - projektować systemy AI/RAG/agentów,
 - integrować je z API i systemami firmowymi,
-- zabezpieczać dane, dostępy i tool calling,
+- zabezpieczać dane, dostępy i wywoływanie narzędzi,
 - projektować uprawnienia i granice dostępu do wiedzy,
 - oceniać ryzyka RODO/security/governance,
 - monitorować systemy AI,
@@ -78,7 +78,7 @@ Bazujesz na SIEM/SOAR, API, konektorach, monitoringach i security operations. Ki
 
 **2. Enterprise AI Automation / Knowledge Systems**
 
-Budujesz praktyczne systemy: RAG, agenci, workflow automation, integracje z API, routing zgłoszeń, klasyfikacja dokumentów, systemy wiedzy, evals, monitoring, runbooki.
+Budujesz praktyczne systemy: RAG, agenci, przepływ pracy automation, integracje z API, routing zgłoszeń, klasyfikacja dokumentów, systemy wiedzy, evals, monitoring, runbooki.
 
 **3. Cloud AI jako filar, nie główna tożsamość**
 
@@ -184,10 +184,10 @@ Na tym etapie ważniejsze są praktyczne artefakty niż cert. Ucz się przez OWA
 - RAG, embeddings, retrieval pipelines, vector databases.
 - Qdrant.
 - LLM fundamentals: tokeny, context window, inference, temperature, hallucination, grounding.
-- System prompt, user prompt, structured outputs.
-- Agent/workflow/tool calling.
+- Prompt systemowy, prompt użytkownika, wyniki strukturalne.
+- Agent/przepływ pracy/wywoływanie narzędzi.
 - Secure RAG.
-- Secure tool calling.
+- Secure wywoływanie narzędzi.
 - Agent permissions.
 - Human-in-the-loop.
 - Logging/audit trail.
@@ -203,7 +203,7 @@ Na tym etapie ważniejsze są praktyczne artefakty niż cert. Ucz się przez OWA
 
 ### Ważne
 
-- LangGraph jako główny framework do agentic workflows.
+- LangGraph jako główny framework do agentic przepływ pracys.
 - LangChain i LlamaIndex na poziomie rozumienia ekosystemu.
 - Ragas i ewaluacja RAG.
 - vLLM.
@@ -275,7 +275,7 @@ Docelowy układ na najbliższe 12 miesięcy:
 
 - **2 projekty główne**,
 - **1 projekt pomocniczy/capstone**,
-- **1 dokument architektoniczny/case study**,
+- **1 dokument architektoniczny/studium przypadku**,
 - laboratoria przygotowawcze bez promowania ich jako głównego portfolio.
 
 ### Projekt główny 1: Secure RAG Reference Architecture
@@ -346,7 +346,7 @@ Od początku projektu dodawaj security:
 - citation correctness pass rate,
 - retrieval hit rate na eval set,
 - liczba odmów / fallbacków,
-- liczba przypadków human review,
+- liczba przypadków wymagających weryfikacji człowieka,
 - koszt per zapytanie, jeśli używasz płatnego API.
 
 W pierwszym roku nie musisz budować dużego Grafana dashboardu. Wystarczy prosty eksport metryk/logów i opis, jak te metryki byłyby monitorowane produkcyjnie.
@@ -398,29 +398,29 @@ Zakres:
 - vendor lock-in,
 - rekomendacja architektoniczna.
 
-To ma być dokument/case study, nie pełny projekt techniczny. Najlepiej, aby powstał z ADR-ów zbieranych podczas pracy nad Secure RAG i AI Security Test Harness.
+To ma być dokument/studium przypadku, nie pełny projekt techniczny. Najlepiej, aby powstał z ADR-ów zbieranych podczas pracy nad Secure RAG i AI Security Test Harness.
 
 ### Projekt pomocniczy / capstone: AI Workflow Orchestrator
 
-Projekt Slack -> Linear jest dobry, ale trzeba go podnieść z poziomu "ładna automatyzacja" do poziomu "enterprise workflow".
+Projekt Slack -> Linear jest dobry, ale trzeba go podnieść z poziomu "ładna automatyzacja" do poziomu "enterprise przepływ pracy".
 
 Cel: automatyczne przekształcanie wiadomości ze Slacka w zgłoszenia Linear przy użyciu AI.
 
 Zakres minimalnej dobrej wersji:
 
-- mock Slack API,
-- mock Linear API,
+- testowe API Slacka,
+- testowe API Lineara,
 - deduplikacja,
-- structured output,
-- human approval,
-- audit log,
+- wynik strukturalny,
+- akceptacja człowieka,
+- dziennik audytu,
 - retry,
 - testy integracyjne,
 - `docs/security-by-design.md`.
 
 Nie musi być pełną produkcyjną integracją z prawdziwym Slackiem i Linearem. Mocki są wystarczające, jeśli lepiej chronią czas, prywatność i zakres.
 
-Definition of done: projekt jest ukończony, gdy można uruchomić jeden scenariusz end-to-end z testowymi wiadomościami: system pobiera wiadomość z mock Slack API, deduplikuje ją, generuje ticket jako structured output, zatrzymuje go na human approval, po akceptacji zapisuje go przez mock Linear API, zapisuje audit log i pokazuje testy integracyjne dla tego przepływu.
+Definicja ukończenia: projekt jest ukończony, gdy można uruchomić jeden scenariusz end-to-end z testowymi wiadomościami: system pobiera wiadomość z testowego API Slacka, deduplikuje ją, generuje zgłoszenie jako wynik strukturalny, zatrzymuje go na akceptacji człowieka, po akceptacji zapisuje go przez testowe API Lineara, zapisuje dziennik audytu i pokazuje testy integracyjne dla tego przepływu.
 
 ### Laboratoria przygotowawcze
 
@@ -431,7 +431,7 @@ Definition of done: projekt jest ukończony, gdy można uruchomić jeden scenari
 
 `llm-structured-output-lab`:
 
-- laboratorium do structured outputs, walidacji JSON/schema, fallbacków i podstawowych testów prompt injection,
+- laboratorium do wyniki strukturalne, walidacji JSON/schema, fallbacków i podstawowych testów prompt injection,
 - może później stać się modułem w RAG albo Workflow Orchestrator,
 - nie promować jako głównego repo portfolio.
 
@@ -453,19 +453,6 @@ Zakres:
 
 Po zdaniu AUTOCOR projekt zamrozić lub traktować jako poboczny.
 
-### Projekty odrzucone jako główne
-
-Te projekty nie są zapomniane, ale nie powinny być promowane jako główne projekty roczne:
-
-- publiczny framework pod SecureVisio,
-- duży projekt Cisco/Network Automation jako główne portfolio,
-- pełna produkcyjna integracja Slack/Linear z prawdziwymi kontami,
-- osobny duży projekt `api-integration-lab`,
-- osobny duży projekt `llm-structured-output-lab`,
-- pełny LLMOps/inference platform project,
-- pełny data engineering / BI project,
-- pełna aplikacja Data Science / Kaggle / ML modeling.
-
 ### Projekt poboczny: Centrum Finansów Osobistych
 
 Ten projekt może być przydatny w portfolio, ale nie jako główny dowód kompetencji AI Security/Architecture.
@@ -475,10 +462,10 @@ Ma sens, jeśli pokażesz w nim:
 - self-hosted deployment,
 - prywatność danych,
 - szyfrowane backupy i restore,
-- audit log,
+- dziennik audytu,
 - import CSV/XLSX z walidacją,
 - wykrywanie duplikatów,
-- AI-assisted categorization z human review,
+- AI-assisted categorization z weryfikacja człowieka,
 - oznaczenie trybu, w którym dane opuszczają serwer,
 - model zapamiętywania poprawek użytkownika,
 - dokumentację threat modelingu,
@@ -512,27 +499,27 @@ Skrócona kolejność:
    AUTOCOR jest początkowo głównym celem. Python jest drugim najważniejszym torem i idzie przez DataCamp, coddy.tech oraz małe ćwiczenia. Start od DataCamp AI Fundamentals. Od początku używasz Google Colab do eksperymentów.
 
 2. **Miesiące 1-3: laboratoria przygotowawcze.**  
-   `api-integration-lab` i `llm-structured-output-lab` służą do nauki Pythona, API, structured outputs, walidacji i podstaw security. Nie są głównymi repozytoriami do promowania.
+   `api-integration-lab` i `llm-structured-output-lab` służą do nauki Pythona, API, wyniki strukturalne, walidacji i podstaw security. Nie są głównymi repozytoriami do promowania.
 
 3. **Miesiące 4-6: Secure RAG Reference Architecture.**  
-   Pierwszy główny projekt: ingestion, chunking, metadata, Qdrant, retrieval, citations, eval set, Ragas/proste evals, runbook, diagram, security notes, abuse cases i pierwsze ADR-y cloud/local.
+   Pierwszy główny projekt: ingestion, chunking, metadata, Qdrant, retrieval, citations, eval set, Ragas/proste evals, runbook, diagram, notatki security, abuse cases i pierwsze ADR-y cloud/local.
 
 4. **Miesiące 7-8: AI Security Test Harness for RAG.**  
    Drugi główny projekt: prompt injection, indirect prompt injection, malicious docs, data leakage, retrieval boundary tests, citation correctness, system prompt leakage, risk -> control -> test matrix i raport Markdown/HTML.
 
 5. **Miesiąc 9: AI Workflow Orchestrator jako mały capstone.**  
-   Projekt pomocniczy: mock Slack API, mock Linear API, deduplikacja, structured output, human approval, audit log, retry, testy integracyjne i `docs/security-by-design.md`.
+   Projekt pomocniczy: testowe API Slacka, testowe API Lineara, deduplikacja, wynik strukturalny, akceptacja człowieka, dziennik audytu, retry, testy integracyjne i `docs/security-by-design.md`.
 
 6. **Miesiąc 10: Local vs Cloud AI Architecture Review.**  
-   Dokument architektoniczny/case study: local AI, AWS Bedrock, Azure AI Foundry / AI-103 path, Google Vertex/Gemini i wariant hybrydowy. Dokument bazuje na ADR-ach tworzonych od miesięcy 4-9.
+   Dokument architektoniczny/studium przypadku: local AI, AWS Bedrock, Azure AI Foundry / AI-103 path, Google Vertex/Gemini i wariant hybrydowy. Dokument bazuje na ADR-ach tworzonych od miesięcy 4-9.
 
 7. **Miesiąc 11: SQL / enterprise data jako dodatek.**  
    Mały moduł CSV/SQL -> dokumenty -> RAG albo prosty SQL agent z read-only user, allowlist tabel, loggingiem i opisem ryzyk.
 
 8. **Miesiąc 12: portfolio i rynek.**  
-   Porządkowanie GitHub, case studies, CV, LinkedIn, oferta "AI/RAG Security & Readiness Review", pierwsze aplikacje testowe albo rozmowy informacyjne.
+   Porządkowanie GitHub, studia przypadku, CV, LinkedIn, oferta "AI/RAG Security & Readiness Review", pierwsze aplikacje testowe albo rozmowy informacyjne.
 
-Wątek security obowiązuje od miesiąca 1: `.env.example`, brak sekretów, walidacja wejść, walidacja odpowiedzi modelu, minimalne uprawnienia, logging bez danych wrażliwych, threat notes, abuse cases i human review.
+Wątek security obowiązuje od miesiąca 1: `.env.example`, brak sekretów, walidacja wejść, walidacja odpowiedzi modelu, minimalne uprawnienia, logging bez danych wrażliwych, threat notes, abuse cases i weryfikacja człowieka.
 
 Wątek cloud obowiązuje od miesiąca 4: ADR-y o local vs managed vector DB, OpenAI-compatible API vs managed cloud AI, data residency, sensitive documents, monitoring i cost controls.
 
@@ -543,22 +530,22 @@ Wątek cloud obowiązuje od miesiąca 4: ADR-y o local vs managed vector DB, Ope
 - AUTOCOR jest głównym torem i masz stabilny rytm nauki.
 - DataCamp AI Fundamentals jest w toku albo ukończone w większości.
 - Python/API/Git są ćwiczone przez DataCamp, coddy.tech i `api-integration-lab`.
-- `api-integration-lab` ma `.env.example`, README, logging bez danych wrażliwych i pierwsze security notes.
+- `api-integration-lab` ma `.env.example`, README, logging bez danych wrażliwych i pierwsze notatki security.
 - Google Colab działa jako środowisko do eksperymentów.
 
 ### Po 14-16 tygodniach
 
 - AUTOCOR jest zdany albo przygotowanie jest w końcowej fazie.
-- Masz `llm-structured-output-lab` albo moduł LLM ze structured outputs, walidacją, fallbackiem i prostymi testami prompt injection.
+- Masz `llm-structured-output-lab` albo moduł LLM ze wyniki strukturalne, walidacją, fallbackiem i prostymi testami prompt injection.
 - Podjąłeś decyzję, czy Google Colab wystarcza jako środowisko eksperymentów.
-- Security jest już nawykiem: walidacja, brak sekretów, human review, threat notes.
+- Security jest już nawykiem: walidacja, brak sekretów, weryfikacja człowieka, threat notes.
 
 ### Po 24-28 tygodniach
 
 - Masz Secure RAG Reference Architecture v1.
 - Potrafisz wyjaśnić retrieval, embeddings, metadata, reranking i evals.
-- Masz dokumentację architektury, runbook, access-control model, monitoring notes, security notes, abuse cases, risk register i pierwsze ADR-y cloud/local.
-- Masz pierwszy case study Secure RAG v1 po angielsku.
+- Masz dokumentację architektury, runbook, access-control model, monitoring notes, notatki security, abuse cases, risk register i pierwsze ADR-y cloud/local.
+- Masz pierwsze studium przypadku Secure RAG v1 po angielsku.
 
 Bufor: jeśli AUTOCOR zabiera więcej niż 4 h tygodniowo, Secure RAG v1 może przesunąć się z miesiąca 6 na miesiąc 7. Wtedy v0.1 i v0.2 nadal muszą być dowiezione, a `docs/access-control-model.md`, podstawowe testy unauthorized retrieval i `docs/monitoring.md` nie mogą wypaść z zakresu.
 
@@ -567,7 +554,7 @@ Bufor: jeśli AUTOCOR zabiera więcej niż 4 h tygodniowo, Secure RAG v1 może p
 - Masz AI Security Test Harness for RAG v1.
 - Potrafisz testować prompt injection, leakage, unauthorized retrieval i cytowania.
 - Masz raport Markdown/HTML i macierz risk -> control -> test.
-- Masz drugie case study po angielsku.
+- Masz drugie studium przypadku po angielsku.
 
 ### Po 44-48 tygodniach
 
@@ -578,7 +565,7 @@ Bufor: jeśli AUTOCOR zabiera więcej niż 4 h tygodniowo, Secure RAG v1 może p
 ### Po 52 tygodniach
 
 - Masz 2 główne repozytoria i 1 pomocniczy capstone.
-- Masz 2-3 case studies.
+- Masz 2-3 studia przypadku.
 - Masz Local vs Cloud AI Architecture Review.
 - Masz CV i LinkedIn po angielsku.
 - Masz wybrany kierunek cloud cert, ale nie musisz być po egzaminie.
@@ -600,14 +587,14 @@ Miesiące 5-8, gdy głównym celem są Secure RAG i AI Security:
 - 2-3 h: kursy pod aktualny etap.
 - 1-2 h: Python, testy, refactoring.
 - 1 h: AUTOCOR utrzymaniowo, jeśli jeszcze niezdany.
-- 1 h: dokumentacja, ADR-y, case study.
+- 1 h: dokumentacja, ADR-y, studium przypadku.
 - 1 h: angielski techniczny.
 
 Miesiące 9-12, gdy głównym celem są portfolio, architektura i rynek:
 
 - 5 h: dopracowanie projektów.
-- 3 h: AI Workflow Orchestrator albo Local vs Cloud Review.
-- 2 h: dokumentacja, case studies, GitHub.
+- 3 h: AI Workflow Orchestrator albo Local vs Cloud Architecture Review.
+- 2 h: dokumentacja, studia przypadku, GitHub.
 - 2 h: cloud/context architecture.
 - 1 h: angielski.
 - 1 h: rynek, CV, LinkedIn, rozmowy informacyjne.
@@ -628,7 +615,7 @@ Wykorzystaj ją do:
 - tworzenia checklist security,
 - wdrażania lepszej dokumentacji,
 - rozwijania API/integracji,
-- zbierania zanonimizowanych case studies.
+- zbierania zanonimizowanych studia przypadku.
 
 Firmowy stack traktuj jako mapę kompetencji:
 
@@ -703,7 +690,7 @@ Plan:
 
 - 2 razy w tygodniu po 30 minut: mówienie techniczne.
 - 1 raz w tygodniu: opis projektu po angielsku.
-- Każdy README i case study pisać po angielsku.
+- Każdy README i studium przypadku pisać po angielsku.
 - Co 2 tygodnie nagrać 5-minutowe omówienie projektu po angielsku.
 - Co miesiąc zrobić symulację rozmowy technicznej.
 
@@ -722,7 +709,7 @@ Tematy do ćwiczenia:
 Najlepszy układ:
 
 - GitHub: repozytoria techniczne.
-- Blog: case studies, decyzje architektoniczne, security reviews.
+- Blog: studia przypadku, decyzje architektoniczne, przeglądy bezpieczeństwa.
 - LinkedIn: krótkie podsumowania i widoczność zawodowa.
 
 Nie publikuj:
@@ -739,7 +726,7 @@ Publikuj:
 - architektury referencyjne,
 - neutralne checklisty,
 - wzorce testowania,
-- abstrakcyjne case studies,
+- abstrakcyjne studia przypadku,
 - wnioski z projektów bez danych wrażliwych.
 
 ## 16. Ścieżka do B2B i konsultingu
@@ -749,7 +736,7 @@ Nie zaczynaj od miękkiego "AI konsultanta". Najpierw zbuduj wiarygodność deli
 Kolejność:
 
 1. Zbuduj 2-3 techniczne projekty portfolio.
-2. Opisz je jako case studies.
+2. Opisz je jako studia przypadku.
 3. Zbierz doświadczenie z firmowego RAG/AI PoC.
 4. Przygotuj ofertę typu "AI/RAG Security & Readiness Review".
 5. Zacznij od małych zleceń po godzinach.
@@ -757,8 +744,8 @@ Kolejność:
 
 Przykładowe usługi:
 
-- AI/RAG readiness review.
-- Secure RAG architecture review.
+- przegląd gotowości AI/RAG.
+- przegląd architektury Secure RAG.
 - AI workflow automation audit.
 - Local vs cloud AI architecture decision.
 - AI security checklist dla PoC.
@@ -860,7 +847,7 @@ Pominąć na tym etapie:
 - trenowanie modeli,
 - prompt engineering jako osobną specjalizację.
 
-Efekt: mini-aplikacja LLM ze structured outputs, walidacją i podstawową ewaluacją.
+Efekt: mini-aplikacja LLM ze wyniki strukturalne, walidacją i podstawową ewaluacją.
 
 ### Krok 3: RAG, embeddings i vector search
 
@@ -891,9 +878,9 @@ Pominąć na tym etapie:
 
 Efekt: pierwsza wersja Secure RAG Reference Architecture.
 
-### Krok 4: Agenci, LangGraph i tool calling
+### Krok 4: Agenci, LangGraph i wywoływanie narzędzi
 
-Cel: budować workflow, w których AI wykonuje ograniczone, kontrolowane działania przez narzędzia.
+Cel: budować przepływ pracy, w których AI wykonuje ograniczone, kontrolowane działania przez narzędzia.
 
 Źródła główne:
 
@@ -914,11 +901,11 @@ Pominąć na tym etapie:
 - Haystack,
 - rozbudowane multi-agent demo bez business value.
 
-Efekt: workflow z tool calling, human-in-the-loop, audit logiem i ograniczonymi uprawnieniami.
+Efekt: przepływ pracy z wywoływanie narzędzi, human-in-the-loop, dziennik audytuiem i ograniczonymi uprawnieniami.
 
 ### Krok 5: AI Security, governance i red teaming LLM
 
-Cel: umieć testować i zabezpieczać RAG/agent workflows.
+Cel: umieć testować i zabezpieczać RAG/agent przepływ pracys.
 
 Źródła główne:
 
@@ -1056,7 +1043,7 @@ Strategia:
 
 ### Ryzyko: rozproszenie po frameworkach
 
-Zabezpieczenie: wybierz LangGraph jako główny framework do agent workflows. LangChain/LlamaIndex znać koncepcyjnie, ale nie robić wszystkiego naraz.
+Zabezpieczenie: wybierz LangGraph jako główny framework do agent przepływ pracys. LangChain/LlamaIndex znać koncepcyjnie, ale nie robić wszystkiego naraz.
 
 ### Ryzyko: przesadne wejście w Cisco
 
@@ -1084,7 +1071,7 @@ Zabezpieczenie: mierzyć postęp przez artefakty, nie kursy.
 
 ### Ryzyko: za dużo pracy bez wpływu na CV
 
-Zabezpieczenie: każde większe zadanie w pracy przekładać na anonimowy opis kompetencji, ADR, checklistę lub case study.
+Zabezpieczenie: każde większe zadanie w pracy przekładać na anonimowy opis kompetencji, ADR, checklistę lub studium przypadku.
 
 ### Ryzyko: AI red teaming only
 
@@ -1096,7 +1083,7 @@ Po 12 miesiącach powinieneś mieć:
 
 - AUTOCOR zdany lub prawie zdany.
 - 2-3 mocne repozytoria publiczne.
-- 2-3 case studies po angielsku.
+- 2-3 studia przypadku po angielsku.
 - praktyczne doświadczenie z firmowym RAG/AI PoC.
 - podstawową widoczność na LinkedIn/blogu.
 - CV po angielsku pod AI Security / AI Implementation / AI Solutions Architecture.

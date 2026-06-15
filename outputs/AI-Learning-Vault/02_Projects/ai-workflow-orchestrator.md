@@ -2,37 +2,36 @@
 
 Status: projekt pomocniczy / capstone.
 
-## Purpose
+## Cel
 
-Pokazać mały enterprise workflow z AI: mock Slack -> structured output -> human approval -> mock Linear -> audit log.
+Pokazać mały przepływ enterprise z AI: testowy Slack -> wynik strukturalny -> akceptacja człowieka -> testowy Linear -> dziennik audytu.
 
-## Definition of done
+## Definicja ukończenia
 
 Projekt jest ukończony, gdy można uruchomić jeden scenariusz end-to-end:
 
-- [ ] pobranie wiadomości z mock Slack API,
+- [ ] pobranie wiadomości z testowego API Slacka,
 - [ ] deduplikacja,
-- [ ] wygenerowanie ticketu jako structured output,
-- [ ] zatrzymanie na human approval,
+- [ ] wygenerowanie zgłoszenia jako wynik strukturalny,
+- [ ] zatrzymanie na akceptację człowieka,
 - [ ] akceptacja,
-- [ ] zapis przez mock Linear API,
-- [ ] audit log,
+- [ ] zapis przez testowe API Lineara,
+- [ ] dziennik audytu,
 - [ ] testy integracyjne.
 
 ## Security by design
 
-- Tool permissions:
-- Human review:
-- Audit log:
-- Sensitive data handling:
+- Uprawnienia narzędzi:
+- Weryfikacja człowieka:
+- Dziennik audytu:
+- Obsługa danych wrażliwych:
 - Abuse cases:
 
-## Project log
+## Log projektu
 
 ### YYYY-MM-DD
 
-- Built:
-- Tested:
-- Decision:
-- Next:
-
+- Zbudowane:
+- Przetestowane:
+- Decyzja:
+- Następny krok:

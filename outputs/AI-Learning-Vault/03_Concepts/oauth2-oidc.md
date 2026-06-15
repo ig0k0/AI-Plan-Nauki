@@ -1,19 +1,19 @@
 # oauth2-oidc
 
-## Definition from memory
+## Definicja z pamięci
 
 [Napisz bez patrzenia w źródła]
 
-## When it breaks
+## Kiedy to się psuje
 
 -
 
-## Project use
+## Zastosowanie w projekcie
 
 -
 
-## Anki candidates
+## Kandydaci do Anki
 
-- Q:
-  A:
+- P:
+  O:
 

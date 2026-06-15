@@ -1,19 +1,19 @@
 # qdrant-metadata-filtering
 
-## Definition from memory
+## Definicja z pamięci
 
 [Napisz bez patrzenia w źródła]
 
-## Why it matters in secure RAG
+## Dlaczego to ważne w secure RAG
 
 -
 
-## Negative test
+## Test negatywny
 
 -
 
-## Anki candidates
+## Kandydaci do Anki
 
-- Q:
-  A:
+- P:
+  O:
 

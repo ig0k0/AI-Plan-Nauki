@@ -2,18 +2,18 @@
 
 Status: projekt główny 1.
 
-## Purpose
+## Cel
 
 Pokazać Enterprise RAG, Qdrant, metadata, evals, access control, monitoring i security.
 
-## Definition of v1
+## Definicja v1
 
 - [ ] Ingestion
 - [ ] Chunking
 - [ ] Metadata
 - [ ] Qdrant
 - [ ] Retrieval
-- [ ] Citations
+- [ ] Cytowania
 - [ ] Eval set
 - [ ] `docs/access-control-model.md`
 - [ ] `docs/monitoring.md`
@@ -22,33 +22,32 @@ Pokazać Enterprise RAG, Qdrant, metadata, evals, access control, monitoring i s
 - [ ] `docs/runbook.md`
 - [ ] ADR-y cloud/local
 
-## Current risk
+## Aktualne ryzyko
 
 [Największe ryzyko architektoniczne/projektowe]
 
-## Access control notes
+## Model dostępu
 
-- Roles:
-- Document classes:
-- Metadata:
-- Negative tests:
+- Role:
+- Klasy dokumentów:
+- Metadane:
+- Testy negatywne:
 
-## Monitoring notes
+## Monitoring
 
 - Latency:
-- Queries without sources:
+- Zapytania bez źródeł:
 - Citation correctness:
 - Retrieval hit rate:
-- Fallbacks:
-- Human review:
-- Cost per query:
+- Fallbacki:
+- Weryfikacja człowieka:
+- Koszt per zapytanie:
 
-## Project log
+## Log projektu
 
 ### YYYY-MM-DD
 
-- Built:
-- Tested:
-- Decision:
-- Next:
-
+- Zbudowane:
+- Przetestowane:
+- Decyzja:
+- Następny krok:

@@ -2,31 +2,31 @@
 
 Status: projekt główny 2.
 
-## Purpose
+## Cel
 
 Testować Secure RAG Reference Architecture pod kątem prompt injection, leakage, unauthorized retrieval, ACL i jakości cytowań.
 
-## Test matrix
+## Macierz testów
 
-| Risk | Control | Test | Status |
+| Ryzyko | Kontrola | Test | Status |
 |---|---|---|---|
 | Unauthorized retrieval | Metadata/ACL filtering | Negative retrieval test | TODO |
 | Prompt injection | Instruction hierarchy + filters | Prompt injection test | TODO |
 | Malicious document | Document sanitization / policy | Indirect injection test | TODO |
 | Bad citations | Citation checks | Citation correctness test | TODO |
 
-## Reports
+## Raporty
 
-- Latest report:
-- Gaps:
-- Next test:
+- Ostatni raport:
+- Luki:
+- Następny test:
 
-## Project log
+## Log projektu
 
 ### YYYY-MM-DD
 
-- Test added:
-- Result:
-- Risk:
-- Next:
+- Dodany test:
+- Wynik:
+- Ryzyko:
+- Następny krok:
 

@@ -2,15 +2,15 @@
 
 Status: laboratorium przygotowawcze, nie główne repo portfolio.
 
-## Purpose
+## Cel
 
 Nauka Pythona, API, testów, retry, loggingu, `.env.example` i podstaw security.
 
-## Current outcome
+## Aktualny wynik
 
 [Co ma działać w tym tygodniu?]
 
-## Security baseline
+## Minimalne security
 
 - [ ] `.env.example`
 - [ ] Brak sekretów w repo
@@ -21,12 +21,12 @@ Nauka Pythona, API, testów, retry, loggingu, `.env.example` i podstaw security.
 - [ ] Test 500
 - [ ] Test 429
 
-## Project log
+## Log projektu
 
 ### YYYY-MM-DD
 
-- Built:
-- Learned:
+- Zbudowane:
+- Nauczone:
 - Problem:
-- Next:
+- Następny krok:
 

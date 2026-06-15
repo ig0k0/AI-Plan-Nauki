@@ -1,29 +1,29 @@
-# Week YYYY-WW
+# Tydzień YYYY-WW
 
-## Main outcome
+## Główny wynik
 
 Jedno zdanie: co ma istnieć na końcu tygodnia?
 
-## Current project
+## Aktualny projekt
 
 - Repo:
 - Branch:
-- Issue/task:
+- Issue / zadanie:
 
-## Study blocks
+## Bloki nauki
 
 - [ ] AUTOCOR:
-- [ ] Python/API:
+- [ ] Python / API:
 - [ ] AI Fundamentals / RAG / Security:
-- [ ] English:
+- [ ] Angielski:
 
-## Retrieval tests for this week
+## Testy z pamięci na ten tydzień
 
 - [ ]
 - [ ]
 - [ ]
 
-## Build tasks
+## Zadania budowania
 
 - [ ]
 - [ ]
@@ -35,14 +35,13 @@ Jedno zdanie: co ma istnieć na końcu tygodnia?
 - Najważniejsze tagi:
 - Karty do usunięcia/poprawy:
 
-## Done means
+## Ukończone oznacza
 
 - Kod działa albo dokument jest gotowy.
-- Jest dowód: commit, test, diagram, ADR, README albo case study.
+- Jest dowód: commit, test, diagram, ADR, README albo studium przypadku.
 - Są minimum 3 dobre fiszki albo świadoma decyzja, że nie potrzeba nowych.
-- Jest krótki wpis w project log.
+- Jest krótki wpis w logu projektu.
 
-## Distractions rejected
+## Odrzucone rozpraszacze
 
 -
-

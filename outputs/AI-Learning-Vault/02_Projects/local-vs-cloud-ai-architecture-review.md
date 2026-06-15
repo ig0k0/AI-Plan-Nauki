@@ -1,28 +1,27 @@
 # local-vs-cloud-ai-architecture-review
 
-Status: dokument architektoniczny / case study.
+Status: dokument architektoniczny / studium przypadku.
 
-## Purpose
+## Cel
 
 Porównać local AI, AWS Bedrock, Azure AI Foundry, Google Vertex/Gemini i wariant hybrydowy.
 
-## Inputs
+## Materiały wejściowe
 
 - ADR-y z Secure RAG:
 - ADR-y z AI Security:
 - Wnioski z projektów:
 
-## Decision dimensions
+## Kryteria decyzji
 
-- Cost:
+- Koszt:
 - Latency:
 - Data residency:
 - Security:
 - Monitoring:
 - Vendor lock-in:
-- Operational complexity:
+- Złożoność operacyjna:
 
-## Draft recommendation
+## Robocza rekomendacja
 
 [Wersja robocza rekomendacji]
-

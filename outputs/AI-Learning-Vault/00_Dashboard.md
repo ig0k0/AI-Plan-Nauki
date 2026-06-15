@@ -1,44 +1,48 @@
-# Learning Dashboard
+# Dashboard nauki
 
-## Current 12-month goal
+## Cel 12-miesięczny
 
 Secure Enterprise AI Systems / AI Security & Implementation Architecture
 
-## Current month
+## Aktualny miesiąc
 
 Miesiąc 1: AUTOCOR + DataCamp AI Fundamentals + start Pythona
 
-## Current main artifact
+## Aktualny artefakt
 
 `api-integration-lab` jako laboratorium przygotowawcze
 
-## This week outcome
+## Wynik tego tygodnia
 
 [Jedno konkretne zdanie: co ma istnieć na końcu tygodnia?]
 
-## Next 3 actions
+## Aktualny plan tygodnia
+
+[[01_Plan/Week-2026-W25]]
+
+## Następne 3 akcje
 
 1.
 2.
 3.
 
-## Do not do this week
+## Nie robię w tym tygodniu
 
 -
 -
 -
 
-## Current Anki focus
+## Aktualny fokus Anki
 
 - AUTOCOR
 - Python API
-- HTTP/errors/logging
+- HTTP / błędy / logging
 
-## Review date
+## Termin przeglądu
 
 Niedziela, godz. ____
 
-## Rules
+## Reguły
 
 1. Nie zaczynam nowego kursu, jeśli obecny temat nie ma artefaktu.
 2. Nie robię notatek bez active recall.
@@ -46,5 +50,4 @@ Niedziela, godz. ____
 4. Nie uczę się drugiego frameworka agentowego, zanim LangGraph nie ma zastosowania w projekcie.
 5. Nie poprawiam Obsidiana zamiast pisać kodu.
 6. Nie robię researchu dłużej niż 45 minut bez decyzji albo eksperymentu.
-7. Każdy tydzień kończy się dowodem: commit, test, diagram, ADR, README albo case study.
-
+7. Każdy tydzień kończy się dowodem: commit, test, diagram, ADR, README albo studium przypadku.
