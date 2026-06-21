@@ -11,6 +11,7 @@ Piszę z pamięci, bez patrzenia w źródła.
 ## Użyte źródło
 
 - Kurs/dokumentacja:
+- NotebookLM:
 - Czas:
 
 ## Kluczowe idee z pamięci
@@ -45,4 +46,3 @@ Jaki commit, test, diagram, README albo ADR z tego wynika?
 ## Następna akcja
 
 Jedna rzecz na następną sesję.
-

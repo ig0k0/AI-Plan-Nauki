@@ -1,16 +1,21 @@
-# System nauki: Obsidian, Anki, Gallup
+# System nauki: Obsidian, Anki, NotebookLM, Gallup
 
 Cel:
 
-> Obsidian ma być panelem sterowania nauką i projektami. Nie budujesz second brain. Budujesz system dowożenia umiejętności.
+> Obsidian ma być panelem sterowania nauką i projektami. Anki ma utrwalać pamięć. NotebookLM ma pomagać pracować ze źródłami. Nie budujesz second brain. Budujesz system dowożenia umiejętności.
 
 ## 1. Rola narzędzi
 
-- **Obsidian**: plan tygodnia, decyzje, log projektu, przegląd.
+- **Obsidian**: plan tygodnia, decyzje, log projektu, przegląd. To jest centrum sterowania.
 - **Anki**: pamięć długoterminowa.
+- **NotebookLM**: praca z materiałami źródłowymi, streszczenia, pytania, porównania, szybkie wyjaśnienia. To nie jest centrum planowania.
 - **GitHub/repo**: dowód kompetencji.
 - **Google Colab**: szybkie eksperymenty Python/AI bez sekretów i bez danych firmowych.
 - **Tablica/iPad**: architektura, debugging, threat modeling, recall wizualny.
+
+Reguła:
+
+> Obsidian trzyma decyzje i system. NotebookLM pomaga zrozumieć źródła. Anki utrwala to, co musi wracać z pamięci.
 
 ## 2. Główny przepływ pracy
 
@@ -83,14 +88,45 @@ Wniosek praktyczny:
 
 > Ten vault jest dobrym rozwiązaniem, jeśli pozostaje prosty. Gdy zaczniesz rozbudowywać tagi, pluginy, dashboardy i automatyzacje, system zacznie przeszkadzać.
 
+## 4. Obsidian czy NotebookLM?
+
+NotebookLM może być lepszy od Obsidiana do jednego zadania: pracy na źródłach. Według dokumentacji Google NotebookLM pozwala oprzeć odpowiedzi na wybranych źródłach, generować podsumowania, pytania i odpowiedzi z cytowaniami. To jest dobre przy kursach, PDF-ach, dokumentacji i długich materiałach.
+
+NotebookLM nie jest lepszy jako główny system nauki, bo:
+
+- nie powinien decydować, co jest priorytetem tygodnia,
+- nie zastępuje logu projektu i decyzji architektonicznych,
+- nie zastępuje GitHuba jako dowodu kompetencji,
+- nie zastępuje Anki jako systemu powtórek,
+- może dawać poczucie zrozumienia bez realnego recall.
+
+Najlepszy układ dla Ciebie:
+
+- **Obsidian**: dashboard, plan, decyzje, review, log projektu.
+- **NotebookLM**: rozmowa z materiałami, generowanie pytań, sprawdzanie rozumienia, szybkie porównania.
+- **Anki**: fiszki z rzeczy, które chcesz pamiętać bez pomocy narzędzi.
+
+Zasada użycia NotebookLM:
+
+1. Wrzuć tylko materiały do aktualnego tygodnia.
+2. Poproś o 10 pytań sprawdzających.
+3. Odpowiedz samodzielnie bez patrzenia.
+4. Dopiero potem użyj NotebookLM do sprawdzenia luk.
+5. Do Obsidiana przepisz tylko decyzję, wniosek albo akcję projektową.
+6. Do Anki dodaj tylko 3-5 najlepszych pytań.
+
+Nie wrzucaj do NotebookLM danych firmowych, sekretów, prywatnych tokenów, niepublicznego kodu ani materiałów, których nie możesz udostępnić usłudze zewnętrznej.
+
 Źródła:
 
 - Dunlosky et al., `Improving Students' Learning With Effective Learning Techniques`: https://journals.sagepub.com/doi/10.1177/1529100612453266
 - Roediger & Karpicke, `Test-Enhanced Learning`: https://journals.sagepub.com/doi/10.1111/j.1467-9280.2006.01693.x
 - EEF, `Metacognition and Self-Regulated Learning`: https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition
 - The Learning Scientists, `Retrieval Practice`: https://www.learningscientists.org/blog/2016/6/23-1
+- Google, `Introducing NotebookLM`: https://blog.google/innovation-and-ai/technology/ai/notebooklm-google-ai/
+- Google, `NotebookLM Help`: https://support.google.com/notebooklm/
 
-## 4. Dopasowanie do Gallupa
+## 5. Dopasowanie do Gallupa
 
 ### Focus
 
@@ -170,7 +206,7 @@ Zabezpieczenie:
 
 - kurs musi skończyć się artefaktem. Inaczej nie wchodzi do planu.
 
-## 5. Jak używać Obsidiana
+## 6. Jak używać Obsidiana
 
 Codziennie:
 
@@ -190,12 +226,12 @@ Co tydzień:
 
 Co miesiąc:
 
-1. Uzupełnij plik w `04_Przegląds`.
+1. Uzupełnij plik w `04_Reviews`.
 2. Linkuj dowód: commit, README, diagram, ADR, studium przypadku.
 3. Zapisz rozpraszacze.
 4. Wybierz jeden rezultat na kolejny miesiąc.
 
-## 6. Jak używać Anki
+## 7. Jak używać Anki
 
 Dodawaj:
 
@@ -231,7 +267,7 @@ Tagi:
 - `cloud`
 - `english`
 
-## 7. Reguły antyrozproszeniowe
+## 8. Reguły antyrozproszeniowe
 
 1. Nie zaczynam nowego kursu, jeśli obecny temat nie ma artefaktu.
 2. Nie robię notatek bez active recall.
@@ -240,8 +276,9 @@ Tagi:
 5. Nie poprawiam Obsidiana zamiast pisać kodu.
 6. Nie robię researchu dłużej niż 45 minut bez decyzji albo eksperymentu.
 7. Każdy tydzień kończy się dowodem: commit, test, diagram, ADR, README albo studium przypadku.
+8. Nie używam NotebookLM jako wymówki do biernego słuchania podsumowań bez recall.
 
-## 8. Kiedy temat jest opanowany
+## 9. Kiedy temat jest opanowany
 
 Temat uznaj za opanowany, gdy spełniasz 4 z 5 warunków:
 

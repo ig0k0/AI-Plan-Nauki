@@ -1,7 +1,7 @@
 # 12-miesięczny plan nauki: Secure Enterprise AI Systems
 
-Start: **16.06.2026**  
-Okres: **16.06.2026 - 15.06.2027**  
+Start: **21.06.2026**  
+Okres: **21.06.2026 - 20.06.2027**  
 Limit: **maksymalnie 14 h tygodniowo**  
 Główny cel zawodowy: **Secure Enterprise AI Systems / AI Security & Implementation Architecture**  
 Taktyczny cel początkowy: **AUTOCOR jako priorytet nr 1 na start**  

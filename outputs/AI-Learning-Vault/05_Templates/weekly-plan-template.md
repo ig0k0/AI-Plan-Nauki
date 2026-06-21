@@ -35,6 +35,12 @@ Jedno zdanie: co ma istnieć na końcu tygodnia?
 - Najważniejsze tagi:
 - Karty do usunięcia/poprawy:
 
+## NotebookLM
+
+- Źródła na ten tydzień:
+- Pytania sprawdzające do wygenerowania:
+- Co po sprawdzeniu trafia do Anki:
+
 ## Ukończone oznacza
 
 - Kod działa albo dokument jest gotowy.

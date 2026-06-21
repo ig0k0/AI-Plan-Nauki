@@ -38,6 +38,12 @@ Miesiąc 1: AUTOCOR + DataCamp AI Fundamentals + start Pythona
 - Python API
 - HTTP / błędy / logging
 
+## Aktualny fokus NotebookLM
+
+- Tylko materiały do bieżącego tygodnia
+- 10 pytań sprawdzających z aktualnych źródeł
+- 3-5 kandydatów do Anki po samodzielnym recall
+
 ## Termin przeglądu
 
 Niedziela, godz. ____
@@ -51,3 +57,4 @@ Niedziela, godz. ____
 5. Nie poprawiam Obsidiana zamiast pisać kodu.
 6. Nie robię researchu dłużej niż 45 minut bez decyzji albo eksperymentu.
 7. Każdy tydzień kończy się dowodem: commit, test, diagram, ADR, README albo studium przypadku.
+8. NotebookLM służy do pracy ze źródłami, nie do prowadzenia planu.
